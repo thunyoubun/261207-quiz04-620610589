@@ -7,7 +7,7 @@ export default function summaryRoute(req, res) {
     if (!user || user.isAdmin) {
       return res.status(403).json({
         ok: false,
-        message: "You do not have permission to check balance",
+        message: "Permission denied",
       });
     }
 
